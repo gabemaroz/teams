@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Class Teams</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery-ui.min.js"></script>
+  <script type="text/javascript" src="teams.js"></script>
+</head>
+
+<body>
+  <div class="teamsContainer container" id="teams">
+    <div class="team" id="queueTeam">
+      <div class="controls">
+        <button class="fa fa-shuffle whiteText" id="shuffleStudents"></button>
+        <button class="fa fa-arrows-rotate whiteText" id="resetStudents"></button>
+        <input type="text" id="addStudent">
+        <button class="fa fa-list whiteText" id="randomStudent"></button>
+        <button class="fa fa-star whiteText" id="starSelected"></button>
+      </div>
+      <ol class="list" id="queueList">
+      </ol>
+    </div>
+    <button class="fa fa-plus-circle whiteText" id="addTeam"></button>
+  </div>
+</body>
+
+</html>

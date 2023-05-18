@@ -1,0 +1,164 @@
+body {
+	font-family: sans-serif;
+	-webkit-app-region: drag;
+	overflow: hidden;
+}
+
+input {
+	font-family: sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: bold;
+	color: #616161;
+	background: #eee;
+	height: 1.5rem;
+	width: 60vw;
+	border-radius: 1rem;
+	border: none;
+	box-sizing: border-box;
+	-webkit-app-region: no-drag;
+}
+
+button {
+	font-size: 0.8rem;
+	background: none;
+	height: 1.5rem;
+	text-align: center;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	-webkit-app-region: no-drag;
+}
+
+button:hover {
+	color: #999;
+}
+
+ol {
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0 0 0 1rem;
+	min-height: 0.75rem;
+	-webkit-app-region: no-drag;
+}
+
+li {
+	text-transform: uppercase;
+	border-radius: 1rem;
+	margin: 0.25rem 0 0.25rem 0;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	background: white;
+	color: #555;
+	-webkit-app-region: no-drag;
+}
+
+li.placeholder {
+	height: 1.5rem;
+}
+
+li:hover {
+	cursor: move;
+}
+
+li:hover .fa-trash {
+	cursor: pointer;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	width: 2rem;
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+li::marker {
+	color: white;
+}
+
+input:focus {
+	color: white;
+	background: black;
+	outline: none;
+}
+
+.container {
+	padding-top: 1.5rem;	
+}
+
+.team {
+	margin: 0.25rem;
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	border-radius: 1rem;
+	-webkit-app-region: no-drag;
+}
+
+.controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.teamcontrols {
+	display: flex;
+	justify-content: space-between;
+}
+
+.whiteText {
+	color: white;
+}
+
+.delete {
+	background: #e74c3c;
+	border-radius: 1rem;
+	margin-right: 0.5rem;
+	text-align: center;
+	color: white;
+	line-height: 1.5rem;
+	width: 0;
+	display: inline-block;
+	transition: 0.3s ease-in-out;
+	opacity: 0;
+}
+
+.pointsControl {
+	float: right;
+}
+
+.xmark,
+.star {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.5rem 0 0.25rem;
+	text-align: center;
+	transition: 0.3s ease-in-out;
+}
+
+.points {
+	margin: 0 0 0 0.5rem;
+}
+
+.placeholder {
+	border: 0.25rem dashed black;
+	background-color: white;
+}
+
+#queueList {
+	list-style-type: none;
+	padding: 0 0 0 0rem;
+}
+
+#queueList li {
+	background: #eee;
+}
+
+#addTeam {
+	display: flex;
+	margin: auto;
+	margin-top: 0.75rem;
+	font-size: 1.5rem;
+}
+
+.selected {
+	background-color: yellow !important;
+}

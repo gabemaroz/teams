@@ -22,6 +22,7 @@ const createWindow = () => {
     titleBarStyle: 'hiddenInset',
     transparent: true,
     frame: true,
+    icon: path.join(__dirname, '/icons/icon.icns'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     }

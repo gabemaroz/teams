@@ -16,7 +16,7 @@
     "name": "Peter Marozzi",
     "email": "gabemaroz@users.noreply.github.com"
   },
-  "license": "GPL3",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
   },
